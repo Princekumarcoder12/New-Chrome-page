@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="refresh" content="2"> -->
+    <!----------------------------fonts------------------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-----------------------------css-------------------------------->
+    <link rel="stylesheet" href="style.css">
+    <!---------------------------title-------------------------------->
+    <link rel="shortcut icon" href="Images/icon.svg" type="image/x-icon">
+    <title>Home</title>
+</head>
+
+<body>
+    <div class="parent">
+
+        <div class="firstbox">
+            <div class="logo">
+                <img src="Images/logo.png" alt="Prince coder">
+            </div>
+            <div class="apps">
+                <i class="fa-brands fa-youtube" onclick="openYoutube()"></i>
+                <i class="fa-brands fa-facebook" onclick="openFacebook()"></i>
+                <i class="fa-brands fa-instagram" onclick="openInstagram()"></i>
+                <i class="fa-brands fa-codepen" onclick="openCodepen()"></i>
+                <i class="fa-brands fa-github" onclick="openGithub()"></i>
+            </div>
+        </div>
+        <div class="center">
+            <div class="inputbox">
+                <div class="input">
+                    <img src="Images/google.webp" alt="G" height="40px" width="40px">
+                    <input type="search" placeholder="Search Anything">
+                </div>
+                <button id="search" onclick="SearchOnGoogle()"><i
+                    class="fa-solid fa-magnifying-glass"></i></button><button id="mic" onclick="MicOpen()"><i
+                        class="fa-solid fa-microphone"></i></button>
+            </div>
+            <div class="main">
+                <span style="cursor: pointer;">I Love Coding <span>❤ </span>.</span>
+            </div>
+        </div>
+        
+        <div class="bottom">
+            <div class="first_column">
+                
+                <div class="youtube" onclick="openYoutube()">
+                    <div class="logo">
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                    <div class="name">
+                        <span id="main">Youtube</span>
+                        <br>
+                        <span id="information">youtube.com</span>
+                    </div>
+                </div>
+                <!-- end of youtube -->
+
+                <div class="facebook" onclick="openFacebook()">
+                    <div class="logo">
+                        <i class="fa-brands fa-facebook"></i>
+                    </div>
+                    <div class="name">
+                        <span id="main">Facebook</span>
+                        <br>
+                        <span id="information">facebook.com</span>
+                    </div>
+                </div>
+                <!-- end of facebook  -->
+                
+                <div class="instagram" onclick="openInstagram()">
+                    <div class="logo">
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                    <div class="name">
+                        <span id="main">Instagram</span>
+                        <br>
+                        <span id="information">instagram.com</span>
+                    </div>
+                </div>
+                <!-- end of instagram  -->
+                
+                <div class="codepen" onclick="openCodepen()">
+                    <div class="logo">
+                        <i class="fa-brands fa-codepen"></i>
+                    </div>
+                    <div class="name">
+                        <span id="main">Codepen</span>
+                        <br>
+                        <span id="information">codepen.io</span>
+                    </div>
+                </div>
+                <!-- end of codepen  -->
+                <div class="github" onclick="openGithub()">
+                    <div class="logo">
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+                    <div class="name">
+                        <span id="main">Github</span>
+                        <br>
+                        <span id="information">github.com/princecoder12</span>
+                    </div>
+                </div>
+                <!-- end of github  -->
+            </div>
+            <div class="second_column">
+                <div class="monkeytype" onclick="openMonkeytype()">
+                    <div class="logo">
+                        <img src="Images/monkeytype.jpg" alt="MT" height="30px" style="border-radius: 6px;">
+                    </div>
+                    <div class="name">
+                        <span id="main">Monkeytype</span>
+                        <br>
+                        <span id="information">monkeytype.com</span>
+                    </div>
+                </div>
+                <!-- end of monkeytype -->
+                
+                <div class="fontawesome" onclick="openfontawesome()">
+                    <div class="logo">
+                        <img src="Images/fontawesome.png" alt="fa" height="30px" style="border-radius: 90px;">
+                    </div>
+                    <div class="name">
+                        <span id="main">Font Awesome</span>
+                        <br>
+                        <span id="information">fontawesome.com/search</span>
+                    </div>
+                </div>
+                <!-- end of font awesome -->
+
+                <div class="chatgpt" onclick="openchatgpt()">
+                    <div class="logo">
+                        <img src="Images/chat.jpg" alt="fa" 
+                        height="30px" style="border-radius: 7px;">
+                    </div>
+                    <div class="name">
+                        <span id="main">Chat GPT</span>
+                        <br>
+                        <span id="information">chat.openai.com</span>
+                    </div>
+                </div>
+                <!-- end of chat gpt -->
+
+                <div class="openai" onclick="openai()">
+                    <div class="logo">
+                        <img src="Images/Open-AI.jpg" alt="fa" 
+                        height="30px" style="border-radius: 7px;">
+                    </div>
+                    <div class="name">
+                        <span id="main">Open-AI</span>
+                        <br>
+                        <span id="information">openai.com</span>
+                    </div>
+                </div>
+                <!-- end of chat gpt -->
+            </div>
+        </div>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>

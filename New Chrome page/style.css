@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
+:root{
+    --main-font: "Poetsen One", sans-serif;
+    --black: #2e2e31;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #1b1a1f;
+    color: white;
+    height: 100vh;
+}
+
+/* ---------------------------------firstbox------------------------------------- */
+
+.parent .firstbox{
+    padding: 30px 100px;
+    display: flex;
+    height: 400px;
+    width: 100%;
+    justify-content: space-between;
+}
+.parent .firstbox .logo img{
+    height: 300px;
+    width: 300px;
+}
+.parent .firstbox .apps{
+    font-size: 1.5em;
+    margin-top: 120px;
+    padding: 10px;
+}
+.parent .firstbox .apps i{
+    margin: 0 13px;
+    transition: .4s;
+}
+.parent .firstbox .apps i:nth-child(1){
+    color: red;
+    background: white;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.parent .firstbox .apps i:nth-child(2){
+    color: blue;
+    background: white;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.parent .firstbox .apps i:nth-child(3){
+    color: black;
+    background: white;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.parent .firstbox .apps i:nth-child(4){
+    color: black;
+    background: white;
+    padding: 5px;
+    border-radius: 50%;
+}
+.parent .firstbox .apps i:nth-child(5){
+    color: black;
+    background: white;
+    padding: 5px;
+    border-radius: 50%;
+}
+.parent .firstbox .apps i:hover{
+    background: none;
+}
+.parent .firstbox .apps i:hover:not(.firstbox .apps i:nth-child(1),.firstbox .apps i:nth-child(2)){
+    color: white;
+}
+
+/* --------------------------------------------center----------------------------------- */
+
+.center{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 30px;
+    width: 90%;
+    /* border: 1px solid black; */
+    margin: auto;
+    margin-bottom: 60px;
+}
+
+.center .inputbox{
+    display: flex;
+}
+.center .inputbox .input{
+    display: flex;
+    background-color: var(--black);
+    padding: 10px;
+    border-radius: 5px;
+}
+.center .inputbox .input input{
+    background: transparent;
+    color: white;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 1.01em;
+    font-family: "Roboto", sans-serif;
+}
+.center .inputbox button{
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-left: 2px solid black;
+    color: white;
+    background-color: var(--black);
+    font-size: 1.01em;
+    border-radius: 5px;
+}
+.center .main{
+    margin-top: 5px;
+    outline: none;
+}
+.center .main span{
+    color: aqua;
+    font-family: var(--main-font);
+    font-size: 2em;
+    outline: none;
+    filter: drop-shadow(0 0 10px);
+}
+.center .main span span{
+    color: red;
+    font-size: 1em;
+    filter: drop-shadow(0 0 10px red);
+    outline: none;
+}
+
+/* --------------------------------------------bottom----------------------------- */
+.bottom{
+    width: 90%;
+    margin: auto;
+    padding: 0px 30px;
+}
+
+.bottom .first_column > div{
+    display: flex;
+    padding: 8px 12px;
+    width: 100%;
+    background: rgba(0,0,0,.2);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-family: "Roboto", sans-serif;
+}
+.bottom .first_column > div .logo{
+    color: red;
+    /* background-color: white; */
+    font-size: 2em;
+    padding: 6px;
+    border-radius: 50%;
+}
+.bottom .first_column > div .name{
+    margin-left: 10px;
+    margin-top: 7px;
+}
+.bottom .first_column > div .name #information{
+    color: gray;
+}
+
+.bottom .first_column .facebook .logo{
+    color: blue;
+}
+.bottom .first_column .instagram .logo{
+    background: linear-gradient( 45deg, #fdf497, #fdf497, #fd5949, #d6249f, #285AEB);
+    background-clip: text;
+    color: transparent;
+}
+.bottom .first_column .codepen .logo{
+    color: white;
+}
+
+.bottom .first_column .github .logo{
+    color: black;
+    background-color: white;
+    height: 45px;
+}
+
+.bottom{
+    display: flex;
+}
+
+.bottom .first_column{
+    height: 100%;
+    width: 100%;
+    margin-right: 2em;
+}
+.bottom .second_column{
+    height: 100%;
+    width: 100%;
+}
+
+/* second column  */
+.bottom .second_column > div{
+    display: flex;
+    padding: 8px 12px;
+    width: 100%;
+    background: rgba(0,0,0,.2);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-family: "Roboto", sans-serif;
+}
+.bottom .second_column > div .logo{
+    color: red;
+    /* background-color: white; */
+    font-size: 2em;
+    padding: 6px;
+    border-radius: 50%;
+}
+.bottom .second_column > div .name{
+    margin-left: 10px;
+    margin-top: 7px;
+}
+.bottom .second_column > div .name #information{
+    color: gray;
+}
+
+
+
+.bottom .first_column div:hover, 
+.bottom .second_column div:hover{
+    background: black;
+}
+
+
+.bottom .first_column div, 
+.bottom .second_column div{
+    cursor: pointer;
+}
+
+.bottom .first_column div #information:hover, 
+.bottom .second_column div #information:hover{
+    text-decoration: underline;
+}
